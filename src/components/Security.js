@@ -13,7 +13,7 @@ function Visitors({ setLoginStatus }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:9000/api/security/getallvisitors")
+      .get("https://amarelitebackend.onrender.com/api/security/getallvisitors")
       .then((response) => {
         setVisitors(response.data);
       })
