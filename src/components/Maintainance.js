@@ -12,7 +12,7 @@ function Maintainance({ oid }) {
 
   const payNow = async (M) => {
     try {
-      const response = await axios.post('http://localhost:9000/api/create-order', {
+      const response = await axios.post('https://amarelitebackend.onrender.com/api/create-order', {
         amount: parseFloat(amount),
         currency,
         receipt,
