@@ -25,7 +25,7 @@ function AddExpense() {
   const handleAddExpense = (event) => {
     event.preventDefault();
     axios
-      .post("http://localhost:9000/api/secretary/addExpense", expense)
+      .post("https://amarelitebackend.onrender.com/api/secretary/addExpense", expense)
       .then(() => {
         alert("Expense added successfully!");
         setExpense({
