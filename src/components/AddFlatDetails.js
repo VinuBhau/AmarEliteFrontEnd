@@ -16,7 +16,7 @@ function AddFlatDetails() {
       FlatSize: FlatSize.current.value,
     };
 
-    axios.post("http://localhost:9000/api/admin/insertFlatDetails", payload)
+    axios.post("https://amarelitebackend.onrender.com/api/admin/insertFlatDetails", payload)
       .then((response) => {
         alert("Flat details have been successfully inserted!");
         // Clear input fields after submission
