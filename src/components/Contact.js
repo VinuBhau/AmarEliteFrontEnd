@@ -17,7 +17,7 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:9000/api/contact", {
+      const response = await fetch("https://amarelitebackend.onrender.com/api/contact", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
