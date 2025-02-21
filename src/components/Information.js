@@ -6,7 +6,7 @@ function Information() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:9000/api/getinfo")
+      .get("https://amarelitebackend.onrender.com/api/getinfo")
       .then((response) => {
         setInfo(response.data);
       })
