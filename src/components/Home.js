@@ -16,7 +16,7 @@ function Home({ setLoginStatus, setUserType, oid, setOid, setUsername }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:9000/api/getAptname")
+      .get("https://amarelitebackend.onrender.com/api/getAptname")
       .then((response) => {
         setApartmentname(response.data[0].Apartmentname);
       })
