@@ -24,7 +24,7 @@ const LoginPage = ({ setLoginStatus, setUserType, setUsername, setOid, oid }) =>
     setUsername(formData.username);
 
     try {
-      const response = await fetch("http://localhost:9000/api/login/authenticate", {
+      const response = await fetch("https://amarelitebackend.onrender.com/api/login/authenticate", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
