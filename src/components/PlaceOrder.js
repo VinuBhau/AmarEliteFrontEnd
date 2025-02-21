@@ -21,7 +21,7 @@ const PlaceOrder = ({ amount }) => {
             }
 
             // Sending order creation request to the backend
-            const response = await axios.post('http://localhost:9000/api/create-order', {
+            const response = await axios.post('https://amarelitebackend.onrender.com/api/create-order', {
                 amount: parseFloat(amount),
                 currency,
                 receipt,
