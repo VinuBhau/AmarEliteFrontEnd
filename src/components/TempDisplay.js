@@ -10,7 +10,7 @@ const TempDisplay = () => {
     const fetchTemperature = async () => {
       try {
         setLoading(true);
-        const response = await axios.get("http://localhost:9000/temperature"); // Replace with your backend URL
+        const response = await axios.get("https://amarelitebackend.onrender.com/temperature"); // Replace with your backend URL
         setTemperatureData(response.data);
       } catch (err) {
         setError("Failed to fetch temperature data");
