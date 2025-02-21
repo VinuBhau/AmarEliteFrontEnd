@@ -18,7 +18,7 @@ function AddFlatOwner() {
     };
 
     axios
-      .post("http://localhost:9000/api/insertFlatOwner", payload)
+      .post("https://amarelitebackend.onrender.com/api/insertFlatOwner", payload)
       .then((response) => {
         alert("Owner Inserted");
       })
