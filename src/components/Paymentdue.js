@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 function Paymentdue() {
   const [paymentdues, setPaymentdues] = useState([])
   useEffect(() => {
-    axios.get("http://localhost:9000/api/secretary/paymentdues")
+    axios.get("https://amarelitebackend.onrender.com/api/secretary/paymentdues")
       .then(response => {
         setPaymentdues(response.data)
       })
