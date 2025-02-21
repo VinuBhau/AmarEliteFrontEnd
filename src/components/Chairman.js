@@ -21,7 +21,7 @@ function Chairman({ setLoginStatus }) {
   }, []);
   const fetchNotices = async () => {
     try {
-      const response = await axios.get("http://localhost:9000/api/chairman/getNotices");
+      const response = await axios.get("https://amarelitebackend.onrender.com/api/chairman/getNotices");
       setNotices(response.data);
     } catch (err) {
       setError("Failed to fetch notices");
