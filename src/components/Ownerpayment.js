@@ -11,7 +11,7 @@ function Ownerpayment() {
     const modeofpayment = useRef("")
     const paymentdescription = useRef("")
     useEffect(() => {
-        axios.get("http://localhost:9000/api/owner/getallowners")
+        axios.get("https://amarelitebackend.onrender.com/api/owner/getallowners")
             .then(response => {
                 setOwners(response.data)
             })
