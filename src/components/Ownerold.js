@@ -7,7 +7,7 @@ function Owner({ username, setLoginStatus ,oid}) {
   const [owners, setOwners] = useState([]); // Fixed variable name
 
   useEffect(() => {
-    axios.get("http://localhost:9000/api/owner/getmaintainence/" + oid)
+    axios.get("https://amarelitebackend.onrender.com/api/owner/getmaintainence/" + oid)
       .then(response => {
         setOwners(response.data);
       })
