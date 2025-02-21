@@ -15,7 +15,7 @@ function Raisecomplaint({ oid }) {
             oid: oid1,
             cstatus:"Pending"
         }
-        axios.post("http://localhost:9000/api/owner/lodgecomplaint", payload)
+        axios.post("https://amarelitebackend.onrender.com/api/owner/lodgecomplaint", payload)
             .then(response => {
                 alert("Your complaint has been sent !!")
             })
