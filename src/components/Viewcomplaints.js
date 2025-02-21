@@ -5,7 +5,7 @@ function Viewcomplaints() {
   const [complaints, setComplaints] = useState([])
 
   useEffect(() => {
-    axios.get("http://localhost:9000/api/secretary/getlodgedcomplaints")
+    axios.get("https://amarelitebackend.onrender.com/api/secretary/getlodgedcomplaints")
       .then(response => {
         setComplaints(response.data)
       })
