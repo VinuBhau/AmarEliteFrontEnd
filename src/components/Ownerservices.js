@@ -6,7 +6,7 @@ const OwnerServices = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:9000/api/owner/getOwnerServices`)
+      .get(`https://amarelitebackend.onrender.com/api/owner/getOwnerServices`)
       .then((response) => {
         setServices(response.data);
       })
