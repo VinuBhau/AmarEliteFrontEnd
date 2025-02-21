@@ -4,7 +4,7 @@ import axios from 'axios';
 function Financialdata() {
     const [financedata, setFinancedata] = useState([]);
     useEffect(() => {
-        axios.get(`http://localhost:9000/api/owner/getfinancedata`)
+        axios.get(`https://amarelitebackend.onrender.com/api/owner/getfinancedata`)
             .then((response) => {
                 setFinancedata(response.data);
             })
