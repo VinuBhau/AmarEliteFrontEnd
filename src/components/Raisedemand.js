@@ -25,7 +25,7 @@ function RaiseDemand() {
       estatus:"Pending"
     };
     console.log(payload);
-    await axios.post("http://localhost:9000/api/Raisedemand", payload)
+    await axios.post("https://amarelitebackend.onrender.com/api/Raisedemand", payload)
       .then(response => {
         if (response.data.message === "Duplicate year detected in Maintainance field.") {
           alert("Duplicate year detected! Please check and try again.");
