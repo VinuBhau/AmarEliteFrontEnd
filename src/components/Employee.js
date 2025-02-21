@@ -13,7 +13,7 @@ function Employee() {
     const saldate = useRef("")
 
     useEffect(()=>{
-        axios.get("http://localhost:9000/api/secretary/getfinancialyear")
+        axios.get("https://amarelitebackend.onrender.com/api/secretary/getfinancialyear")
         .then(response=>{
             setFinancialyear(response.data)
         })
