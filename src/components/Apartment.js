@@ -17,7 +17,7 @@ function Apartment() {
   useEffect(() => {
     const fetchApartmentData = async () => {
       try {
-        const response = await axios.get("http://localhost:9000/api/getAptname");
+        const response = await axios.get("https://amarelitebackend.onrender.com/api/getAptname");
         setApartmentData(response.data[0]);
         Aname.current.value = response.data[0].Apartmentname;
         Address.current.value = response.data[0].Address;
