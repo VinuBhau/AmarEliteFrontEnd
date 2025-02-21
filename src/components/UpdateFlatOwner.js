@@ -12,7 +12,7 @@ function UpdateFlatOwner() {
     };
 
     axios
-      .put("http://localhost:9000/api/updateFlatOwner", payload)
+      .put("https://amarelitebackend.onrender.com/api/updateFlatOwner", payload)
       .then((response) => {
         alert("Flat owner updated successfully!");
         FlatId.current.value = "";
