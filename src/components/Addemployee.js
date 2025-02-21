@@ -24,7 +24,7 @@ const Addemployee = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:9000/api/admin/addemployee', formData);
+      const response = await axios.post('https://amarelitebackend.onrender.com/api/admin/addemployee', formData);
       console.log('Data submitted successfully:', response.data);
       alert('Employee data saved successfully!');
     } catch (error) {
