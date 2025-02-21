@@ -28,7 +28,7 @@ function ComplaintFeedback() {
 
     try {
       const response = await axios.post(
-        "http://localhost:9000/api/AddComplaint",
+        "https://amarelitebackend.onrender.com/api/AddComplaint",
         payload
       );
       alert(response.data.message || "Complaint submitted successfully!");
